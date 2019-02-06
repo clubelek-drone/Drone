@@ -1,9 +1,13 @@
 #include <Arduino.h>
+#include <BNO055.hpp>
 
 void setup() {
-  // put your setup code here, to run once:
+  pinMode(13, OUTPUT);
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  test();
+  delay(400);
+  digitalWrite(13, LOW);
+  delay(200);
 }
